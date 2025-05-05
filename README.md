@@ -1,5 +1,5 @@
 # Console-Chat-for-Meta-Llama-Inst
-Это код для работы с GPT моделью Meta-Llama-B-Instruct
+Это код для работы с GPT моделью Meta-Llama-B-Instruct.
 Для работы с ней установите модель тут `https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct`
 
 Этот код создан в учебных целях и продолжает развиваться.  
