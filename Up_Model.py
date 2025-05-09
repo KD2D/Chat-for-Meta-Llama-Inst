@@ -9,8 +9,8 @@ import module
 
 
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
-cache_path = "D:/AIR"
-fine_tuned_path = "D:/AIR/fine-training"
+cache_path = "D:/AIR" # Поменяйте на путь к вашему к вашему репозиторию с моделью
+fine_tuned_path = "D:/AIR/fine-training" 
 
 
 # Загрузка модели
