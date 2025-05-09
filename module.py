@@ -120,7 +120,7 @@ def chat_normal(model, tokenizer, prompt="", history=None, max_new_tokens=512, s
 # Перезагружаем не забудь нажать ctrl + s
 def RestartKey(model, tokenizer, history):
     try:
-        # Модуль_re = sys.modules[__name__] # Вроде бы не ннада
+        # Модуль_re = sys.modules[__name__] # Вроде бы не нннада
 
         print("Перезапуск!")
         importlib.reload(sys.modules[__name__])  # <-- файл (модуль.py) перезагружает себя
