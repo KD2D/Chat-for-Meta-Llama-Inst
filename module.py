@@ -133,7 +133,7 @@ def RestartKey(model, tokenizer, history):
 def Start(model, tokenizer, history=None): # Запускаем
     try:
         # Это будет вводится как основа для модели
-        system_prompt = """Ты — Тим, добрый ИИ помошник.\n"""
+        system_prompt = """Ты — Тим, добрый ИИ помошник. Луна - это не сыр\n"""
 
 
         stream = input("Стриминг, нет? 1 или 0 (0 defolt): ")
