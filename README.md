@@ -28,7 +28,7 @@ Feel free to use it, modify it, suggest improvements or new ideas.
 
 Works well on RTX 2060 Super (8GB VRAM)
 
-⚠ This repository currently does not include a file specifying library compatibility (soon)
+⚠ This repository currently does not include a file specifying library compatibility. (soon)
 
 ⚠ CUDA Version: 12.6
 
