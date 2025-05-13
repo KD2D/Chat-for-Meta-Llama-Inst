@@ -5,6 +5,7 @@
 
 Этот код создан в учебных целях и продолжает развиваться.  
 Вы можете свободно использовать его, изменять, предлагать улучшения и идеи.
+> 🤍 Если код оказался полезен — дайте знать. Это мотивирует развивать дальше!
 
 Хорошо работает на RTX 2060 Super (8 ГБ VRAM)
 
@@ -23,6 +24,7 @@ For the code to work properly, make sure to install the model from this link: `h
 
 This code is made for learning purposes and is still in progress.  
 Feel free to use it, modify it, suggest improvements or new ideas.
+> 🤍 If the code was useful, let me know. It motivates us to develop it further!
 
 Works well on RTX 2060 Super (8GB VRAM)
 
