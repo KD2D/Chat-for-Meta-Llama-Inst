@@ -24,7 +24,7 @@ For the code to work properly, make sure to install the model from this link: `h
 
 This code is made for learning purposes and is still in progress.  
 Feel free to use it, modify it, suggest improvements or new ideas.
-> 🤍 If the code was useful, let me know. It motivates us to develop it further!
+> 🤍 If the code was useful, let me know. It motivates to develop it further!
 
 Works well on RTX 2060 Super (8GB VRAM)
 
