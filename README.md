@@ -27,7 +27,8 @@ Cкачайте репозиторий удобным вам способом в
 
 Если проект получит популярность, я переведу все комментарии в коде на русский и английский языки.
 
-# ENG
+---
+
 
 This is the code for working with the Meta-Llama-B-Instruct GPT model in the console.
 
