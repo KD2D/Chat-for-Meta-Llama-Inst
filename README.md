@@ -1,4 +1,5 @@
 # Console-Chat-for-Meta-Llama-Inst
+
 Это код для работы с GPT моделью Meta-Llama-B-Instruct в консоле.
 
 Для корректной работы кода обязательно установите модель по этой ссылке: `https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct`
@@ -11,24 +12,21 @@
 
 ## Как пользоватся этим репозиторием:
 
-⚠ Python Version 3.9+
+⚠ Python версия 3.9+
 
-Cкачайте репозиторий удобным вам способом в Консоли или PowerShell
-
+Cкачайте репозиторий удобным вам способом в Консоли или PowerShell:
 `git clone https://github.com/KD2D/Chat-for-Meta-Llama-Inst.git`
 
-Установка PyTorch с CUDA 12.1
-
+Установка PyTorch с CUDA 12.1:
 `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
 
-Установите остальные зависимости
-
+Установите остальные зависимости:
 `pip install -r requirements.txt`
 
 Если проект получит популярность, я переведу все комментарии в коде на русский и английский языки.
+<br><br>
 
 ---
-
 
 This is the code for working with the Meta-Llama-B-Instruct GPT model in the console.
 
@@ -42,18 +40,15 @@ Works well on RTX 2060 Super (8 GB VRAM)
 
 ## How to use this repository:
 
-⚠ Python Version 3.9+
+⚠ Python version 3.9+
 
 Download the repository in any convenient way using Console or PowerShell:
-
 `git clone https://github.com/KD2D/Chat-for-Meta-Llama-Inst.git`
 
 Install PyTorch with CUDA 12.1:
-
 `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
 
 Install the remaining dependencies:
-
 `pip install -r requirements.txt`
 
 If the project becomes popular, I will translate all comments in the code into both Russian and English.
