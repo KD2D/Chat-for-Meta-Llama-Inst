@@ -9,29 +9,50 @@
 
 Хорошо работает на RTX 2060 Super (8 ГБ VRAM)
 
-⚠ В данный момент этот репозиторий не содержит файла, определяющего совместимость библиотек. (скоро)
-
-⚠ CUDA Version: 12.6
+# Как пользоватся этим репозиторием:
 
 ⚠ Python Version 3.9+
+
+Cкачайте репозиторий удобным вам способом в Консоли или PowerShell
+
+`git clone https://github.com/KD2D/Chat-for-Meta-Llama-Inst.git`
+
+Установка PyTorch с CUDA 12.1
+
+`pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
+
+Установите остальные зависимости
+
+`pip install -r requirements.txt`
 
 Если проект получит популярность, я переведу все комментарии в коде на русский и английский языки.
 
 ---
+
 This is the code for working with the Meta-Llama-B-Instruct GPT model in the console.
 
-For the code to work properly, make sure to install the model from this link: `https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct`
+To ensure proper operation of the code, make sure to install the model from this link: `https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct`
 
-This code is made for learning purposes and is still in progress.  
-Feel free to use it, modify it, suggest improvements or new ideas.
-> 🤍 If the code was useful, let me know. It motivates to develop it further!
+This code was created for educational purposes and is under active development.  
+You are free to use it, modify it, and suggest improvements and ideas.  
+> 🤍 If the code was useful — let me know. That motivates further development!
 
-Works well on RTX 2060 Super (8GB VRAM)
+Works well on RTX 2060 Super (8 GB VRAM)
 
-⚠ This repository currently does not include a file specifying library compatibility. (soon)
-
-⚠ CUDA Version: 12.6
+# How to use this repository:
 
 ⚠ Python Version 3.9+
 
-If this project becomes popular, I will translate all comments in the code to both Russian and English.
+Download the repository in any convenient way using Console or PowerShell:
+
+`git clone https://github.com/KD2D/Chat-for-Meta-Llama-Inst.git`
+
+Install PyTorch with CUDA 12.1:
+
+`pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
+
+Install the remaining dependencies:
+
+`pip install -r requirements.txt`
+
+If the project becomes popular, I will translate all comments in the code into both Russian and English.
