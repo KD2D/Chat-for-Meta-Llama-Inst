@@ -9,7 +9,7 @@
 
 Хорошо работает на RTX 2060 Super (8 ГБ VRAM)
 
-# Как пользоватся этим репозиторием:
+## Как пользоватся этим репозиторием:
 
 ⚠ Python Version 3.9+
 
@@ -39,7 +39,7 @@ You are free to use it, modify it, and suggest improvements and ideas.
 
 Works well on RTX 2060 Super (8 GB VRAM)
 
-# How to use this repository:
+## How to use this repository:
 
 ⚠ Python Version 3.9+
 
