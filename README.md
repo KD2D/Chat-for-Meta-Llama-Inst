@@ -23,6 +23,8 @@ Cкачайте репозиторий удобным вам способом в
 Установите остальные зависимости:
 `pip install -r requirements.txt`
 
+Запустите `Up_Model.py`
+
 Если проект получит популярность, я переведу все комментарии в коде на русский и английский языки.
 <br><br>
 
@@ -50,5 +52,7 @@ Install PyTorch with CUDA 12.1:
 
 Install the remaining dependencies:
 `pip install -r requirements.txt`
+
+Run `Up_Model.py`
 
 If the project becomes popular, I will translate all comments in the code into both Russian and English.
