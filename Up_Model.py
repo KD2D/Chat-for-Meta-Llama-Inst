@@ -1,6 +1,4 @@
-# Этот модуль выполняет все главные штуки
-# Например вывод текста или обновление кода во время работы программы.
-
+# Этот код запускает модель
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import PeftModel, PeftConfig
