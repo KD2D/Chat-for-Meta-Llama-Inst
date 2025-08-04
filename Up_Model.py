@@ -1,6 +1,9 @@
 # Этот код запускает модель
+<<<<<<< HEAD
 # • This code launches the model
 
+=======
+>>>>>>> bd6e161253257603c8b05d9f38a96d102647ec05
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import PeftModel, PeftConfig
