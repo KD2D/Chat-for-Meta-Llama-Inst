@@ -13,7 +13,7 @@
 ## Как пользоватся этим репозиторием:
 
 ⚠ Python версия 3.9+
-⚠ CUDA Version: 12.6
+
 
 Cкачайте репозиторий удобным вам способом в Консоли или PowerShell:
 `git clone https://github.com/KD2D/Chat-for-Meta-Llama-Inst.git`
@@ -44,7 +44,7 @@ Works well on RTX 2060 Super (8 GB VRAM)
 ## How to use this repository:
 
 ⚠ Python version 3.9+
-⚠ CUDA Version: 12.6
+
 
 Download the repository in any convenient way using Console or PowerShell:
 `git clone https://github.com/KD2D/Chat-for-Meta-Llama-Inst.git`
