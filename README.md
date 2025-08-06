@@ -26,7 +26,7 @@ Cкачайте репозиторий удобным вам способом в
 
 Запустите `Up_Model.py`
 
-Если проект получит популярность, я переведу все комментарии в коде на русский и английский языки.
+Спасибо за развитие популярности репозитория!
 <br><br>
 
 ---
@@ -56,5 +56,4 @@ Install the remaining dependencies:
 `pip install -r requirements.txt`
 
 Run `Up_Model.py`
-
-If the project becomes popular, I will translate all comments in the code into both Russian and English.
+Thanks for growing the popularity of the repository!
