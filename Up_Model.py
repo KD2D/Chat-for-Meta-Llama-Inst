@@ -54,6 +54,6 @@ tokenizer = AutoTokenizer.from_pretrained(model_id, cache_dir=cache_path)
 # • Switch to eval mode (may improve speed and reduce memory usage — or not)
 model.eval()
 
-# Запускаем дельше остальную работу
+# Запускаем дальше остальную работу
 # • Now we run the rest of the process
 module.start(model, tokenizer)
