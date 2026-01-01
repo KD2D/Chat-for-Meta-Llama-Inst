@@ -1,7 +1,7 @@
 torch
 bitsandbytes
 tokenizers==0.21.0
-transformers==4.50.3
+transformers==4.51.0
 peft==0.14.0
 accelerate==1.7.0
 safetensors==0.4.5
