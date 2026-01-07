@@ -19,7 +19,7 @@ Cкачайте репозиторий удобным вам способом в
 `git clone https://github.com/KD2D/Chat-for-Meta-Llama-Inst.git`
 
 Установка PyTorch с CUDA 12.1:
-`pip install torch --index-url https://download.pytorch.org/whl/cu121`
+`pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
 
 Установите остальные зависимости:
 `pip install -r requirements.txt`
@@ -50,7 +50,7 @@ Download the repository in any convenient way using Console or PowerShell:
 `git clone https://github.com/KD2D/Chat-for-Meta-Llama-Inst.git`
 
 Install PyTorch with CUDA 12.1:
-`pip install torch --index-url https://download.pytorch.org/whl/cu121`
+`pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
 
 Install the remaining dependencies:
 `pip install -r requirements.txt`
