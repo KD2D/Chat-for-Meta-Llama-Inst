@@ -1,8 +1,9 @@
 torch
-bitsandbytes
+bitsandbytes==0.43.1
 tokenizers==0.21.0
 transformers==4.52.1
 peft==0.14.0
-accelerate==1.8.0
+accelerate==1.7.0
 safetensors==0.4.5
 sentencepiece==0.2.0
+numpy==1.26.4
