@@ -40,6 +40,10 @@ model = AutoModelForCausalLM.from_pretrained(
     quantization_config=bnb_config,
     offload_buffers=True,
     device_map="auto" # Автоматически на GPU • Automatically on GPU
+    torch_dtype=torch.float16,  # Загрузка быстрее чем с float32
+    offload_folder="D:/offload",  # отгружает часть данных на CPU
+    # attn_implementation="flash_attention_2", # Кротое внимание. Нужна сборка
+    attn_implementation="sdpa" # Быстрое внимание, но чуть хуже
 )
 #
 # Загрузка токенизатора • Load the tokenizer
