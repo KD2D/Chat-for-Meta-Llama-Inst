@@ -11,7 +11,6 @@ import json
 import importlib
 import sys
 from threading import Thread
-from search_engine import needs_search, do_search
 from transformers import TextIteratorStreamer
 
 
@@ -211,13 +210,7 @@ def start(model, tokenizer, history=None):  # Запускаем • Launch
 
             #Тут будет поиск • Search goes here
 
-
             else: # Ну значит это нейронке + узнаём какой метод общения используем • Okay, so this is for the model + figuring out which chat mode is used
-
-                if needs_search(user_input):
-                    response = do_search(user_input)
-                    print("🔎 Результаты поиска:\n", response)
-
                 if (question == "1"):
                     response = chat_stream(model, tokenizer, prompt=user_input, history=history, system_prompt=system_prompt)
                     # -
