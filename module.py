@@ -162,7 +162,7 @@ def read_file(file_path): #Читает файл • Read from file
     except Exception as e:
         print(f"Ошибка загрузки файла {e}")
         handle_error(e)
-        return ""
+        return 
 
 
 def start(model, tokenizer, history=None):  # Запускаем • Launch
