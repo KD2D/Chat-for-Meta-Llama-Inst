@@ -189,10 +189,11 @@ def start(model, tokenizer, history=None):  # Запускаем • Launch
         if history is None or "": # история есть? • Is there a history?
             history = []
             try:
-                history.append(read_file(file))
-            except:
                 with open(file, "w", encoding="utf-8") as file:
                     json.dump("", file, ensure_ascii=False)
+                history.append(read_file(file))
+            except:
+                print("Память не найдена")
 
         while True:
             print(f"Ранее: {history}")  # можно потом убрать • Can be removed later
