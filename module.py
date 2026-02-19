@@ -22,16 +22,21 @@ def chat_stream(model, tokenizer, prompt="", history=None, max_new_tokens=512, s
 
     try:
         # Тут мы используем system_prompt • Here we use the system_prompt
-        full_prompt = f"<|system|>\n{system_prompt}</s>\n"
+        full_prompt = "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n"
+        full_prompt += f"{system_prompt}<|eot_id|>"
 
         if history:
             for user, assistant in history:
-                full_prompt += f"<|user|>\n{user}</s>\n<|assistant|>\n{assistant}</s>\n"
+                full_prompt += f"<|start_header_id|>user<|end_header_id|>\n\n{user}<|eot_id|>"
+                full_prompt += f"<|start_header_id|>assistant<|end_header_id|>\n\n{assistant}<|eot_id|>"
 
-        full_prompt += f"<|user|>\n{prompt}</s>\n<|assistant|>\n"
 
-        # Обработка и вывод • Processing and output
+        full_prompt += f"<|start_header_id|>user<|end_header_id|>\n\n{prompt}<|eot_id|>"
+        full_prompt += "<|start_header_id|>assistant<|end_header_id|>\n\n"
+
+        # Оброботка и вывод • Processing and output
         inputs = tokenizer(full_prompt, return_tensors="pt").to("cuda")
+        input_length = inputs.input_ids.shape[1]
         print("ИИ: ", end="")
 
         stop_token_ids = tokenizer.convert_tokens_to_ids(["<|system|>", "<|user|>", "</s>", "<|assistant|>"]) # Добавь сюда <|eot_id|> если хочешь посмотреть на баги :) • Add <|eot_id|> here if you want to debug some weird behavior :)
@@ -57,7 +62,8 @@ def chat_stream(model, tokenizer, prompt="", history=None, max_new_tokens=512, s
         # Сокращение вывода нейросети и отправка. Получим только (последний) ответ • Shorten the model output and send only the (last) response
 
         # match = re.search(r"<\|assistant\|\>\n(.*?)</s>", generated_text, re.DOTALL)
-        answer = generated_text.split("<|assistant|>\n")[-1].split("</s>")[0].strip()
+        new_tokens = outputs[0][input_length:]
+        answer = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
 
         # Очистка неиспользуемой памяти • Clear unused memory
         torch.cuda.empty_cache()
