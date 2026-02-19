@@ -79,16 +79,22 @@ def chat_normal(model, tokenizer, prompt="", history=None, max_new_tokens=512, s
     try:
 
         #Что мы вводим в system_prompt будет тут • This is where the system_prompt content goes
-        full_prompt = f"<|system|>\n{system_prompt}</s>\n"
+        full_prompt = "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n"
+        full_prompt += f"{system_prompt}<|eot_id|>"
 
         if history:
             for user, assistant in history:
-                full_prompt += f"<|user|>\n{user}</s>\n<|assistant|>\n{assistant}</s>\n"
+                full_prompt += f"<|start_header_id|>user<|end_header_id|>\n\n{user}<|eot_id|>"
+                full_prompt += f"<|start_header_id|>assistant<|end_header_id|>\n\n{assistant}<|eot_id|>"
 
-        full_prompt += f"<|user|>\n{prompt}</s>\n<|assistant|>\n"
+        # Текущий вопрос пользователя
+        full_prompt += f"<|start_header_id|>user<|end_header_id|>\n\n{prompt}<|eot_id|>"
+        # Метка для начала ответа ассистента
+        full_prompt += "<|start_header_id|>assistant<|end_header_id|>\n\n"
 
         # Оброботка и вывод • Processing and output
         inputs = tokenizer(full_prompt, return_tensors="pt").to("cuda")
+        input_length = inputs.input_ids.shape[1]
 
         with torch.no_grad():  # Генерация ответа без отслеживания градиентов (Tab) • Generate response without tracking gradients
             outputs = model.generate(
@@ -107,7 +113,8 @@ def chat_normal(model, tokenizer, prompt="", history=None, max_new_tokens=512, s
         decoded = tokenizer.decode(outputs[0], skip_special_tokens=False)
 
         # Сокращение вывода нейросети и отправка. Получим только (последний) ответ • Shorten the model output and send only the (last) response
-        answer = decoded.split("<|assistant|>\n")[-1].split("</s>")[0].strip()
+        new_tokens = outputs[0][input_length:]
+        answer = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
 
         # Очистка неиспользуемой памяти • Clear unused memory
         torch.cuda.empty_cache()
