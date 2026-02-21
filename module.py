@@ -125,7 +125,7 @@ def chat_normal(model, tokenizer, prompt="", history=None, max_new_tokens=512, s
         # Очистка неиспользуемой памяти • Clear unused memory
         torch.cuda.empty_cache()
         # Удаление ненужных переменных • Delete unnecessary variables
-        del inputs, outputs
+        del inputs, new_tokens, outputs
 
         return answer
 
