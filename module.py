@@ -116,7 +116,7 @@ def chat_normal(model, tokenizer, prompt="", history=None, max_new_tokens=512, s
 
         )
 
-        decoded = tokenizer.decode(outputs[0], skip_special_tokens=False)
+        # decoded = tokenizer.decode(outputs[0], skip_special_tokens=False)
 
         # Сокращение вывода нейросети и отправка. Получим только (последний) ответ • Shorten the model output and send only the (last) response
         new_tokens = outputs[0][input_length:]
