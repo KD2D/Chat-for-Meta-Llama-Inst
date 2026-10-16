@@ -1,6 +1,8 @@
 # Console-Chat-for-Meta-Llama-Inst
 
-Это код для работы с GPT моделью Meta-Llama-3-хB-Instruct в консоле.
+Это код для работы с llm моделью Meta-Llama-3-хB-Instruct в консоле.
+
+Для удобства дебага кода, без перезагрузки модели,создана горячая перезагрузка файла [module.py](module.py) для применения изменений сохраните обновление, так же устойчивость от падения при проверках с выводом самой ошибки
 
 Для корректной работы кода обязательно установите модель по этой ссылке: `https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct`
 
@@ -32,6 +34,10 @@ Cкачайте репозиторий удобным вам способом в
 ---
 
 This is the code for working with the Meta-Llama-3-xB-Instruct GPT model in the console.
+
+This is the code for working with the Meta-Llama-3-xB-Instruct LLM model in the console.
+
+To make code debugging easier without reloading the model, hot reloading of the [module.py](module.py) file has been implemented—just save your changes to apply them. It also features crash resilience during checks, outputting the error message itself.
 
 To ensure proper operation of the code, make sure to install the model from this link: `https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct`
 
